@@ -1,0 +1,7 @@
+<%= image_tag(@dog.image_url, size: "400x400") %>
+<h1>Name: <%= @dog.name %></h1>
+<h1>Age: <%= @dog.age %></h1>
+<br/>
+<h2><%= link_to "Home Page", dogs_path %></h2>
+<h2><%= link_to "Edit Dog", edit_dog_path %></h2>
+<h2><%= link_to "Delete Dog", delete_dog_path, method: :delete, data: { confirm: 'Are you sure?' } %></h2>

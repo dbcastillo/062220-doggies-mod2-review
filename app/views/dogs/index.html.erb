@@ -1,0 +1,7 @@
+<h1>Dogs Galore! Please click a dog to see more info</h1>
+<hr/>
+<h3>Wanna create a new dog?......click here....<%= link_to "New Dog", new_dog_path %></h3>
+<hr/>
+<% @dogs.each do |dog| %>
+  <%= link_to image_tag(dog.image_url, size: "200x200"), dog_path(dog) %>
+<% end %>
